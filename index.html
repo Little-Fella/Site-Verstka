@@ -6,6 +6,7 @@
     <title>CrystalDent</title>
     <link rel="icon" type="image/png" href="img/teeth.png" />
     <link rel="stylesheet" href="main.css" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   </head>
   <body>
     <!--Шапка сайта-->
@@ -61,7 +62,25 @@
           </div>
         </div>
         </div>
-        <img src="img/teeth.png" alt="Зуб" class="header-info-img" />
+        <model-viewer 
+          id="tooth-model"
+          src="/img/scene.glb" 
+          alt="3D модель зуба"
+          camera-controls 
+          exposure="0.6"
+          auto-rotate
+          shadow-intensity="1"
+          interaction-prompt="none"
+          bounds="tight">
+        
+          <button class="hotspot" slot="hotspot-crown" data-position="0.3m 3m -0.5m" data-normal="0m 1m 0m" data-info="Лечение кариеса: 5 000₽"></button>
+          <button class="hotspot" slot="hotspot-root" data-position="0.2m 1m 0.4m" data-normal="0m -1m 0m" data-info="Чистка каналов: 8 000₽"></button>
+          <button class="hotspot" slot="hotspot-front" data-position="0m 2.5m 0.5m" data-normal="0m 0m 1m" data-info="Реставрация: 6 500₽"></button>
+          <button class="hotspot" slot="hotspot-occlusal" data-position="0m 3m 0m" data-normal="0m 1m 0m" data-info="Герметизация фиссур: 4 000₽"></button>
+
+        </model-viewer>
+        <div id="tooltip"></div>
+        
       </section>
       <!--Секция "О нас"-->
       <section class="text">

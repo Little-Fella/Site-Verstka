@@ -99,3 +99,30 @@ modelViewer.addEventListener("mouseup", () => {
     modelViewer.autoRotate = true;
   }, 3000);
 });
+
+// Слайдер до/после
+const sliderContainer = document.querySelector('.slider-container');
+const afterImage = document.getElementById('after');
+const handle = document.querySelector('.slider-handle');
+
+let isDragging = false;
+
+handle.addEventListener('mousedown', () => {
+  isDragging = true;
+});
+
+window.addEventListener('mouseup', () => {
+  isDragging = false;
+});
+
+window.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+
+  const rect = sliderContainer.getBoundingClientRect();
+  let offsetX = e.clientX - rect.left;
+  offsetX = Math.max(0, Math.min(offsetX, rect.width));
+
+  const percentage = (offsetX / rect.width) * 100;
+  handle.style.left = `${percentage}%`;
+  afterImage.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+});

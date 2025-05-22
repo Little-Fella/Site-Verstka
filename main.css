@@ -326,32 +326,126 @@ model-viewer {
   color: #555;
 }
 
-.our-works {
-  border-radius: var(--radius);
+.slider-container {
+  position: relative;
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  user-select: none;
 }
 
-.our-works-title {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.slider-container img {
+  position: absolute;
   width: 100%;
-  padding-bottom: 20px;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  will-change: transform;
 }
 
-.our-works-title-text {
-  margin-right: 15px;
+.after-img {
+  mask-image: linear-gradient(to right, black 50%, transparent 50%);
+  z-index: 2;
+  transition: mask-image 0.05s ease;
 }
 
-.our-works-photos {
+.slider-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 3;
+  cursor: ew-resize;
+  transform: translateX(-50%);
   display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.our-works-photos img {
-  width: 45%;
-  border-radius: var(--radius);
+.arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  z-index: 4;
+}
+
+.arrows svg {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+  background: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+/* Стили для надписей "До" и "После" */
+.slider-text {
+  position: absolute;
+  bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.after-text {
+  left: 10px;
+}
+
+.before-text {
+  right: 10px;
+}
+
+.slider-text-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px; /* расстояние между слайдером и текстом */
+}
+
+.slider-text-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 100%;
+  background: #EFEFEF; /* светло-серый фон */
+  border-radius: 20px / 20px; /* овальные скругления: 50px по горизонтали и 100px по вертикали */
+  padding: 30px 50px; /* внутренние отступы сверху/снизу и слева/справа */
+}
+
+.slider-container {
+  width: 350px;
+  aspect-ratio: 4 / 3;
+  position: relative;
+  flex-shrink: 0;
+  margin-left: -300px; /* сдвиг влево */
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.our-works-text {
+  flex: 1;
+  max-width: 450px;
+  font-size: 30px;
 }
 
 .doctors-title {

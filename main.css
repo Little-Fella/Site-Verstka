@@ -44,9 +44,13 @@ body {
   font-family: var(--font-family-base), serif;
   background-color: var(--background);
   color: var(--text-dark);
+  min-width: 320px; /* Минимальная ширина для мобильных устройств */
+  max-width: 1920px; /* Максимальная ширина для больших экранов */
+  margin: 0 auto; /* Центрирование контента */
+  width: 100%;
+  overflow-x: hidden; /* Предотвращает горизонтальный скролл */
 }
 
-/* Основные стили для ноутбуков (1024px - 1600px) */
 main {
   padding: 0px 5%;
 }
@@ -179,6 +183,37 @@ header.header {
   padding: 8px 16px;
   border-radius: var(--radius);
   color: var(--background);
+}
+
+model-viewer {
+  width: 70%;
+  height: 450px;
+  position: relative;
+}
+
+#tooltip {
+  position: fixed;
+  background: transparent;
+  color: black;
+  padding: 10px 15px;
+  pointer-events: none;
+  display: none;
+  z-index: 100;
+  transform: translate(15px, 15px);
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+/* Стиль для визуализации точек (можно убрать после настройки) */
+.hotspot {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid black;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .about-us {
@@ -531,8 +566,23 @@ input::placeholder {
   align-items: flex-start;
   padding: 50px 70px;
   background-color: var(--primary);
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--primary);
+  min-width: 320px; /* Минимальная ширина для мобильных устройств */
+  max-width: 1620px; /* Максимальная ширина для больших экранов */
+  margin: 0 auto; /* Центрирование контента */
+  width: 100%;
 }
 
+.footer-content {
+  width: 100%;
+  max-width: 1000px; /* Или другого значения, соответствующего вашему дизайну */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .footer img {
   width: 200px;
   height: auto;
@@ -735,6 +785,7 @@ input::placeholder {
 
   .footer {
     padding: 70px 120px;
+    width: 100%;
   }
 
   .footer img {

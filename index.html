@@ -22,16 +22,16 @@
       <nav class="header-menu">
         <ul class="header-menu-list">
           <li class="header-menu-item">
-            <a href="" class="header-menu-link">Наши услуги</a>
+            <a href="#services" class="header-menu-link">Услуги</a>
           </li>
           <li class="header-menu-item">
-            <a href="" class="header-menu-link">Врачи</a>
+            <a href="#doctors" class="header-menu-link">Врачи</a>
           </li>
           <li class="header-menu-item">
-            <a href="" class="header-menu-link">Цены</a>
+            <a href="#works" class="header-menu-link">Наши работы</a>
           </li>
           <li class="header-menu-item">
-            <a href="" class="header-menu-link">Контакты</a>
+            <a href="#contacts" class="header-menu-link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -101,10 +101,12 @@
             диагностике и лечению заболеваний зубов, десен и ротовой полости.
             </p>
           </div>
-            <img src="img/protez.png" />
+          <img src="img/protez.png" />
         </div>
-        <div class="services">
-          <div class="services ">
+      </section>
+        <h2 id="works" class="our-works-title-text">Наши услуги</h2>
+        <div id = "services" class="services">
+          
             <div class="services-list">
               <button class="service-btn active" data-service="veneers">Виниры</button>
               <button class="service-btn" data-service="prosthetics">Протезирование</button>
@@ -112,7 +114,7 @@
               <button class="service-btn" data-service="implantation">Имплантация</button>
               <button class="service-btn" data-service="caries">Лечение кариеса</button>
               <button class="service-btn" data-service="hygiene">Профессиональная гигиена</button>
-          </div>
+            </div>
           
           <div class="service-info container">
               <div class="service-content active" id="veneers">
@@ -200,11 +202,11 @@
             </div>
           </div>
         </div>
-      </section>
+      
       <!--Секция "Наши работы"-->
       <section class="our-works">
         <div class="our-works-title">
-          <h2 class="our-works-title-text">Наши работы</h2>
+          <h2 id="works" class="our-works-title-text">Наши работы</h2>
           <p class="item">До/После</p>
         </div>
         <div class="our-works container">
@@ -231,8 +233,8 @@
           </div>
         </div>
       </section>
-      <section class="doctors">
-        <h1 class="doctors-title">Наши специалисты</h1>
+      <section id="doctors" class="doctors">
+        <h1 class="our-works-title-text">Наши специалисты</h1>
         <div class="card-content">
           <div class="full-card">
             <div class="card">
@@ -268,22 +270,8 @@
           </div>
           
         </section>
-        <section class="recording">
-          <h1 class="record-title">Запишитесь на прием<br> 
-            в клинику CrystalDent 
-          </h1>
-          <div class="record-data">
-              <form class="record-data-name field">
-                <input type="text" id="name" placeholder="Ваше имя">
-              </form>
-              <form class="record-data-number field">
-                <input type="number" id="number" placeholder="Телефон">
-              </form>
-              <button class="record">Записаться на приём</button>
-          </div>
-        </section>
         <!--Секция "Часто задаваемые вопросы"-->
-        <section class="qq">
+        <section id="asks" class="qq">
           <h1>Часто задаваемые вопросы</h1>
           <div class="qq-content">
 
@@ -369,11 +357,14 @@
           <img src="img/logo-footer.png" alt="Логотип">
           <div class="footer-text">
               <h4>Навигация</h4>
-              <p>Наши услуги<br>Врачи<br>Цены<br>Отзывы</p>
+              <a href="#services">Услуги</a>
+              <a href="#doctors">Врачи</a>
+              <a href="#works">Наши работы</a>
+              <a href="#asks">Ваши вопросы</a>
           </div>
-          <div class="footer-text">
+          <div id="contacts" class="footer-text">
               <h4>Контакты</h4>
-              <p>Адрес: ул. Генерала Белова 6<br>Телефон: +7 999 999 99 99<br>Почта: zybu@gmail.com<br>Часы работы: </p>
+              <p>Адрес: ул. Генерала Белова 6<br>Телефон: +7 999 999 99 99<br>Почта: zybu@gmail.com</p>
           </div>
           <button class="record">Записаться на приём</button>
       </section>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrystalDent</title>
+    <link rel="icon" type="image/png" href="img/teeth.png" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!--Шапка сайта-->
+    <header class="header">
+      <div class="header-logo">
+        <img src="img/logo.png" alt="CrystalDent"  />
+      </div>
+      <button class="hamburger" aria-label="Меню">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="header-menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a href="" class="header-menu-link">Наши услуги</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="" class="header-menu-link">Врачи</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="" class="header-menu-link">Цены</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="" class="header-menu-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-action">
+        <button class="login">Вход/Регистрация</button>
+      </div>
+    </header>
+    <main>
+      <section class="header-info">
+        <div class="header-info-block">
+          <div class="header-info-block-text">
+            <p class="header-info-number">1000+</p><p class="header-info-block-title">здоровых улыбок</p>
+            <p class="header-info-text">Мы создаем улыбки, которые<br> меняют жизни людей</p>
+            <button class="record">Записаться на приём</button>
+          </div>
+          <div class="header-info-blocks">
+            <div class="header-info-left-block">
+              <p class="header-info-text">Пациенты с<br> идеальной улыбкой</p>
+              <p class="header-info-block-number">100%</p>
+            </div>
+        
+          <div class="header-info-right-block">
+            <div class="header-info-right-block-top">
+              <p class="header-info-block-number">10</p>
+              <p class="header-info-text">лет<br> опыта</p>
+            </div>
+            <p class="header-info-text">Средний стаж наших врачей</p>
+          </div>
+        </div>
+        </div>
+        <img src="img/teeth.png" alt="Зуб" class="header-info-img" />
+      </section>
+      <!--Секция "О нас"-->
+      <section class="text">
+        <p>
+          CrystalDent - это современное и комфортное пространстов. Мы предлагаем
+          высококачественные стоматологические услуги, основанные на современных
+          методах лечения, чтобы каждый пациент чувствовал себя уверенно и
+          спокойно на пути к здоровой и красивой улыбке.
+        </p>
+      </section>
+      <section class="about-us">
+        <div class="top-row">
+          <div class="about-us container">
+            <p class="item">О нас</p>
+            <h3>Клиника CrystalDent</h3>
+            <p class="description">
+            Мы - современная клиника, предлагающая широкий спектр<br> услуг по
+            диагностике и лечению заболеваний зубов, десен и ротовой полости.
+            </p>
+          </div>
+            <img src="img/protez.png" />
+        </div>
+        <div class="services">
+          <div class="services ">
+            <div class="services-list">
+              <button class="service-btn active" data-service="veneers">Виниры</button>
+              <button class="service-btn" data-service="prosthetics">Протезирование</button>
+              <button class="service-btn" data-service="whitening">Отбеливание зубов</button>
+              <button class="service-btn" data-service="implantation">Имплантация</button>
+              <button class="service-btn" data-service="caries">Лечение кариеса</button>
+              <button class="service-btn" data-service="hygiene">Профессиональная гигиена</button>
+          </div>
+          
+          <div class="service-info container">
+              <div class="service-content active" id="veneers">
+                <div class="service-text">
+                  <h3 class="item">Виниры</h3>
+                  <p class="service-price">83 200 руб</p>
+                </div>
+                <div class="top-row">
+                  <img src="img/smile.png" alt="Виниры" class="service-image">
+                  <p class="service-description">
+                      Винирование – современный способ для исправления зубов и достижения голливудской улыбки. Приобретенные дефекты можно подкорректировать с помощью ортопедического лечения.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="service-content" id="prosthetics">
+                <div class="service-text">
+                  <h3 class="item">Протезирование</h3>
+                  <p class="service-price">45 000 руб</p>
+                </div>
+                  
+                  <div class="top-row">
+                    <img src="img/protez.png" alt="Протезирование" class="service-image">
+                    <p class="service-description">
+                      Современные методы протезирования позволяют восстановить утраченные зубы с максимальным комфортом и естественным внешним видом.
+                    </p>
+                  </div>
+              </div>
+              
+              <div class="service-content" id="whitening">
+                <div class="service-text">
+                  <h3 class="item">Отбеливание зубов</h3>
+                  <p class="service-price">25 000 руб</p>
+                </div>
+                  <div class="top-row">
+                    <img src="./img/otbelivaniye-zubov1.jpg" alt="Отбеливание" class="service-image">
+                  <p class="service-description">
+                      Профессиональное отбеливание зубов поможет вернуть естественную белизну и сделать улыбку более привлекательной.
+                  </p>
+                  </div>
+              </div>
+              
+              <div class="service-content" id="implantation">
+                <div class="service-text">
+                  <h3 class="item">Имплантация</h3>
+                  <p class="service-price">65 000 руб</p>
+                </div>
+                <div class="top-row">
+                  <img src="img/implantacija-na-3d-illjustracii-.jpg" alt="Имплантация" class="service-image">
+                  <p class="service-description">
+                      Имплантация зубов - надежный и долговечный способ восстановления утраченных зубов с сохранением всех функций.
+                  </p>
+                </div>
+                  
+              </div>
+              
+              <div class="service-content" id="caries">
+                <div class="service-text">
+                  <h3 class="item">Лечение кариеса</h3>
+                  <p class="service-price">8 000 руб</p>
+                </div>
+                  <div class="top-row">
+                    <img src="img/karies.jpg" alt="Кариес" class="service-image">
+                    <p class="service-description">
+                      Современное лечение кариеса без боли и дискомфорта с использованием качественных материалов.
+                    </p>
+                  </div>
+                  
+              </div>
+              
+              <div class="service-content" id="hygiene">
+                <div class="service-text">
+                  <h3 class="item">Профессиональная гигиена</h3>
+                  <p class="service-price">12 000 руб</p>
+                </div>
+                  
+                <div class="top-row">
+                  <img src="img/gigiena.jpeg" alt="Гигиена" class="service-image">
+                  <p class="service-description">
+                      Комплексная чистка зубов у стоматолога поможет сохранить здоровье зубов и десен на долгие годы.
+                  </p>
+                </div>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Секция "Наши работы"-->
+      <section class="our-works">
+        <div class="our-works-title">
+          <h2 class="our-works-title-text">Наши работы</h2>
+          <p class="item">До/После</p>
+        </div>
+        <div class="our-works container">
+          <div class="our-works-photos">
+            <!--Фото до"-->
+            <img
+              src="img/foto_zubov_krishtianu_ronaldu_do_i_posle_breketov 1.png"
+            />
+
+            <!--Фото после"-->
+            <img
+              src="img/foto_zubov_krishtianu_ronaldu_do_i_posle_breketov 2.png"
+            />
+          </div>
+          <div class="our-works-text">
+            <h3>Металические брекеты</h3>
+            <p class="description">
+              Ортодонт успешно провел коррекцию прикуса с помощью металлических
+              брекетов, обеспечен не только эстетичный результат, но и улучшение
+              зубочелюстной системы.
+            </p>
+            <p class="our-works-text-name">Артём Ефремов</p>
+            <p class="our-works-text-doctor">· ортодонт</p>
+          </div>
+        </div>
+      </section>
+      <section class="doctors">
+        <h1 class="doctors-title">Наши специалисты</h1>
+        <div class="card-content">
+          <div class="full-card">
+            <div class="card">
+              <h4 class="card-title">Хирург</h4>
+              <img src="./img/maksim.png" alt="Icon 1" class="card-icon" />
+            </div>
+            <p class="card-name">Максим Новиков</p>
+          </div>
+          
+          <div class="full-card">
+            <div class="card">
+              <h4 class="card-title">Детский стоматолог</h4>
+              <img src="./img/ira.png" alt="Icon 2" class="card-icon" />
+            </div>
+            <p class="card-name">Ирина Гришина</p>
+          </div>
+          
+          <div class="full-card">
+            <div class="card">
+              <h4 class="card-title">Ортодонт</h4>
+              <img src="./img/artem.png" alt="Icon 3" class="card-icon" />
+            </div>
+            <p class="card-name">Артём Ефремов</p>
+          </div>
+          
+          <div class="full-card">
+            <div class="card">
+              <h4 class="card-title">Стоматолог</h4>
+              <img src="./img/maria.png" alt="Icon 4" class="card-icon" />
+              
+            </div>
+            <p class="card-name">Мария Сидорова</p>
+          </div>
+          
+        </section>
+        <section class="recording">
+          <h1 class="record-title">Запишитесь на прием<br> 
+            в клинику CrystalDent 
+          </h1>
+          <div class="record-data">
+              <form class="record-data-name field">
+                <input type="text" id="name" placeholder="Ваше имя">
+              </form>
+              <form class="record-data-number field">
+                <input type="number" id="number" placeholder="Телефон">
+              </form>
+              <button class="record">Записаться на приём</button>
+          </div>
+        </section>
+        <!--Секция "Часто задаваемые вопросы"-->
+        <section class="qq">
+          <h1>Часто задаваемые вопросы</h1>
+          <div class="qq-content">
+
+            <div class="qq-card">
+              <hr />
+              <div class="qq-bottom">
+                <p class="qq-card-text">Какова средняя продолжительность приема?</p>
+                <button class="ans">
+                  <svg class="ans-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="ans-content">
+                <p>Средняя продолжительность приема составляет 30-60 минут в зависимости от сложности процедуры.</p>
+              </div>
+            </div>
+
+            <div class="qq-card">
+              <hr />
+              <div class="qq-bottom">
+                <p class="qq-card-text">Какие часы работы клиники?</p>
+                <button class="ans">
+                  <svg class="ans-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="ans-content">
+                <p>Мы работаем с понедельника по пятницу с 9:00 до 21:00, в субботу с 10:00 до 18:00. Воскресенье - выходной.</p>
+              </div>
+            </div>
+
+            <div class="qq-card">
+              <hr />
+              <div class="qq-bottom">
+                <p class="qq-card-text">Даете ли вы гарантию на лечение?</p>
+                <button class="ans">
+                  <svg class="ans-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="ans-content">
+                <p>Да, мы предоставляем гарантию на все виды лечения. Срок гарантии зависит от конкретной процедуры и указывается в договоре.</p>
+              </div>
+            </div>
+
+            <div class="qq-card">
+              <hr />
+              <div class="qq-bottom">
+                <p class="qq-card-text">Как подготовиться к первому визиту?</p>
+                <button class="ans">
+                  <svg class="ans-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="ans-content">
+                <p>Рекомендуем: 1) Не есть за 1-1.5 часа до приема; 2) Почистить зубы перед визитом; 3) Взять с собой медицинскую карту (если есть); 4) Прийти на 10 минут раньше для оформления.</p>
+              </div>
+            </div>
+            
+            <div class="qq-card">
+              <hr />
+              <div class="qq-bottom">
+                <p class="qq-card-text">Какие методы стерилизации вы используете?</p>
+                <button class="ans">
+                  <svg class="ans-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="ans-content">
+                <p>Мы используем многоэтапную стерилизацию: 1) Дезинфекция в ультразвуковой ванне; 2) Автоклавирование при 134°C; 3) Хранение в стерильных пакетах. Все инструменты одноразовые или проходят полный цикл стерилизации.</p>
+              </div>
+            </div>
+          </div> 
+        </section>
+    </main>
+    <footer>
+      <section class="footer">
+          <img src="img/logo-footer.png" alt="Логотип">
+          <div class="footer-text">
+              <h4>Навигация</h4>
+              <p>Наши услуги<br>Врачи<br>Цены<br>Отзывы</p>
+          </div>
+          <div class="footer-text">
+              <h4>Контакты</h4>
+              <p>Адрес: ул. Генерала Белова 6<br>Телефон: +7 999 999 99 99<br>Почта: zybu@gmail.com<br>Часы работы: </p>
+          </div>
+          <button class="record">Записаться на приём</button>
+      </section>
+  </footer>
+  </body>
+  <script src="javascript.js"></script>
+</html>

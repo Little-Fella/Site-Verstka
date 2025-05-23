@@ -1092,3 +1092,79 @@ footer p {
     transform: translateY(0);
   }
 }
+
+.btn-blue {
+  background-color: #00c0f1;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #efefef;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: calc(50% - 10px); /* два в ряд с отступом */
+  min-height: 430px;
+  min-width: 400px;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 16px;
+  font-size: 16px;
+  text-align: left;
+  align-self: flex-start; /* ключевая строка */
+}
+
+.card p {
+  margin: 0 16px 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  margin: 70px 0px 0px 16px;
+  font-size: 12px;
+  gap: 30px;
+}
+
+.card-footer a {
+  color: var(--background);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: var(--radius);
+  background-color: var(--button);
+  padding: 3px 10px;
+}
+
+.card,
+.card h3,
+.card p,
+.card-footer,
+.card-footer span {
+  align-self: flex-start;
+  text-align: left;
+}

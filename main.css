@@ -429,11 +429,10 @@ model-viewer {
   max-width: 100%;
   background: #efefef; /* светло-серый фон */
   border-radius: 20px / 20px; /* овальные скругления: 50px по горизонтали и 100px по вертикали */
-  padding: 30px 20px; /* внутренние отступы сверху/снизу и слева/справа */
+  padding: 30px 30px; /* внутренние отступы сверху/снизу и слева/справа */
 }
 
 .our-works-button-wrapper {
-  margin-top: 80px;
   display: flex;
   justify-content: flex-end;
 }
@@ -471,7 +470,6 @@ model-viewer {
 
 .our-works-text {
   flex: 1;
-  max-width: 450px;
   font-size: 30px;
 }
 
@@ -805,7 +803,6 @@ footer p {
 @media (min-width: 1600px) {
   main {
     padding: 0px 8%;
-    max-width: 1800px;
     margin: 0 auto;
   }
 
@@ -1319,3 +1316,21 @@ footer p {
     transform: translateY(0);
   }
 }
+
+/* .card-back {
+  background: #2264d1;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+} */

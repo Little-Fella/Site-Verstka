@@ -192,6 +192,7 @@ header.header {
   padding: 8px 16px;
   border-radius: var(--radius);
   color: var(--background);
+  font-weight: 500;
 }
 
 model-viewer {
@@ -240,8 +241,10 @@ model-viewer {
   padding: 20px;
 }
 
-.description {
-  font-size: 22px;
+.description,
+.our-works-text-doctor {
+  font-size: 20px;
+  color: var(--text-light);
 }
 
 .top-row {
@@ -351,7 +354,7 @@ model-viewer {
 .slider-container img {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
   top: 0;
   left: 0;
@@ -371,7 +374,7 @@ model-viewer {
   width: 4px;
   height: 100%;
   background: #ffffff;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   z-index: 3;
   cursor: ew-resize;
   transform: translateX(-50%);
@@ -397,7 +400,7 @@ model-viewer {
   background: #fff;
   border-radius: 50%;
   padding: 4px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Стили для надписей "До" и "После" */
@@ -410,18 +413,11 @@ model-viewer {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.after-text {
-  left: 10px;
-}
-
-.before-text {
-  right: 10px;
-}
-
 .slider-text-block {
   display: flex;
   align-items: flex-start;
   gap: 40px; /* расстояние между слайдером и текстом */
+  width: 100%;
 }
 
 .slider-text-block {
@@ -429,20 +425,39 @@ model-viewer {
   flex-direction: row;
   align-items: flex-start;
   gap: 60px;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 40px auto;
   max-width: 100%;
-  background: #EFEFEF; /* светло-серый фон */
+  background: #efefef; /* светло-серый фон */
   border-radius: 20px / 20px; /* овальные скругления: 50px по горизонтали и 100px по вертикали */
-  padding: 30px 50px; /* внутренние отступы сверху/снизу и слева/справа */
+  padding: 30px 30px; /* внутренние отступы сверху/снизу и слева/справа */
+}
+
+.our-works-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.our-works-button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.our-works-button:hover {
+  background-color: #357abd;
 }
 
 .slider-container {
-  width: 350px;
+  width: 50%;
   aspect-ratio: 4 / 3;
   position: relative;
   flex-shrink: 0;
-  margin-left: -300px; /* сдвиг влево */
 }
 
 .slider-container img {
@@ -456,14 +471,33 @@ model-viewer {
 
 .our-works-text {
   flex: 1;
-  max-width: 450px;
   font-size: 30px;
 }
 
-.our-works-title-text {
-  margin-bottom: 20px;
+.our-works-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
 }
 
+.our-works-title-text {
+  margin-right: 15px;
+}
+
+.our-works-text h4 {
+  margin-bottom: 30px;
+}
+
+.our-works-text-name {
+  font-size: 20px;
+}
+
+.footer-our-works {
+  margin-top: 20px;
+  display: flex;
+}
 .doctors-title {
   color: #000000; /* Чёрный цвет */
   font-size: 2rem;
@@ -553,7 +587,7 @@ model-viewer {
   backface-visibility: hidden;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .flip-card-front {
@@ -770,7 +804,6 @@ footer p {
 @media (min-width: 1600px) {
   main {
     padding: 0px 8%;
-    max-width: 1800px;
     margin: 0 auto;
   }
 
@@ -845,8 +878,7 @@ footer p {
   }
 
   .item {
-    padding: 12px 24px;
-    font-size: 1.2rem;
+    font-size: 29px;
   }
 
   .about-us h3 {

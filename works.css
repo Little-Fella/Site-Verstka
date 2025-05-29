@@ -61,10 +61,24 @@ body {
 
 header.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Центрируем все элементы */
   align-items: center;
-  padding: 8px 10%;
+  padding: 8px 8%;
   background-color: white;
+  position: relative;
+  gap: 30%; /* Добавляем отступ между элементами */
+}
+
+.header-menu {
+  margin-right: auto; /* Меню прижимается к левому краю */
+}
+
+.header-action {
+  margin-left: auto; /* Кнопка прижимается к правому краю */
+}
+
+.hamburger {
+  display: none; /* Скрываем гамбургер на десктопе */
 }
 
 .header-logo img {
@@ -73,7 +87,7 @@ header.header {
 
 .header-menu-list {
   display: flex;
-  gap: 1.5rem;
+  gap: 30px;
   list-style: none;
 }
 
